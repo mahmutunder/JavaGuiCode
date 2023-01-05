@@ -2,6 +2,7 @@ package week;
 
 public class PrintConsecutive {
     public static void main(String[] args) {
+        Object a= new Object();
 
 
         printConsecutiveNumbers(20);
@@ -29,6 +30,11 @@ public class PrintConsecutive {
             }
 
             i++;
+        }
+        try {
+
+        }finally {
+            System.out.println();
         }
 
     }

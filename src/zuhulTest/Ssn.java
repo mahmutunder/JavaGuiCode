@@ -54,45 +54,40 @@ public class Ssn extends JFrame implements ActionListener {
 
     private void checkValid(String getInfo) {
 
-        if (getInfo.length() !=11){
+        if (getInfo.length() != 11) {
             ssnShow.setText("No Valid!");
         }
 
-        boolean checkInFor=true;
+        boolean checkInFor = true;
 
-            for (int i = 0; i < getInfo.length(); i++) {
-                if (Character.isLetter(getInfo.charAt(i))) {
-                    ssnShow.setText("No Valid! Only Digits please!");
-                    checkInFor=false;
-                    break;
+        for (int i = 0; i < getInfo.length(); i++) {
+            if (Character.isLetter(getInfo.charAt(i))) {
+                ssnShow.setText("No Valid! Only Digits please!");
+                checkInFor = false;
+                break;
 
 
-                }
+            }
         }
 
-        String[] check=getInfo.split("-");
+        String[] check = getInfo.split("-");
 
-      boolean first3=(check[0].charAt(0)==check[0].charAt(1))&&
-              (check[0].charAt(2)==check[0].charAt(0));
+        boolean first3 = (check[0].charAt(0) == check[0].charAt(1)) &&
+                (check[0].charAt(2) == check[0].charAt(0));
 
-        boolean second2=(check[1].charAt(0)==check[1].charAt(1));
-
-
-        boolean last4=(check[2].charAt(0)==check[2].charAt(1))&&
-                (check[2].charAt(2)==check[2].charAt(3)) &&
-                (check[2].charAt(0)==check[2].charAt(3));
+        boolean second2 = (check[1].charAt(0) == check[1].charAt(1));
 
 
+        boolean last4 = (check[2].charAt(0) == check[2].charAt(1)) &&
+                (check[2].charAt(2) == check[2].charAt(3)) &&
+                (check[2].charAt(0) == check[2].charAt(3));
 
-        if (first3 || second2|| last4 ){
+
+        if (first3 || second2 || last4) {
             ssnShow.setText("No valid SSN");
-        }else if(checkInFor){
-           ssnShow.setText("Valid SSN");
+        } else if (checkInFor) {
+            ssnShow.setText("Valid SSN");
         }
-
-
-
-
 
 
     }
@@ -105,7 +100,7 @@ public class Ssn extends JFrame implements ActionListener {
         ssn.setHorizontalAlignment(JTextField.CENTER);
 
         showFormat = new JLabel();
-        showFormat.setFont(new Font(Font.DIALOG, Font.ITALIC&Font.BOLD, 17));
+        showFormat.setFont(new Font(Font.DIALOG, Font.ITALIC & Font.BOLD, 17));
         showFormat.setText("Enter SSN:123-45-6789");
         showFormat.setBounds(100, 80, 200, 20);
         ssnShow = new JTextField(10);
