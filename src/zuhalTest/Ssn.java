@@ -1,4 +1,4 @@
-package zuhulTest;
+package zuhalTest;
 
 import javax.swing.*;
 import java.awt.*;
