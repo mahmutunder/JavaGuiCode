@@ -13,7 +13,7 @@ public class OpenNewFrame {
         frame.setSize(420,420);
         frame.setLayout(null);
 
-        label.setBounds(0,0,100,50);
+        label.setBounds(0,0,250,50);
         label.setFont(new Font(Font.MONOSPACED,Font.ITALIC,25));
 
         frame.add(label);

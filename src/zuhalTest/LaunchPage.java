@@ -30,6 +30,9 @@ public class LaunchPage  implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource()==btn){
+
+            frame.dispose();
+
             OpenNewFrame op= new OpenNewFrame();
         }
     }
