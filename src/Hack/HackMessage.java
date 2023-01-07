@@ -8,7 +8,7 @@ public class HackMessage {
         // to exit use top right red button to stop run time
         while (true){
             JOptionPane.showMessageDialog(null,
-                    "Your computer have vires!! Call Us!",
+                    "Your computer have virus!! Call Us!",
                     "We got YOU!",JOptionPane.WARNING_MESSAGE);
         }
     }
