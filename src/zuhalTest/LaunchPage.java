@@ -29,5 +29,8 @@ public class LaunchPage  implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if(e.getSource()==btn){
+            OpenNewFrame op= new OpenNewFrame();
+        }
     }
 }
