@@ -16,6 +16,8 @@ public class LaunchPage  implements ActionListener {
         btn.setBounds(100,160,200,40);
         btn.setFocusable(false);
         btn.addActionListener(this);
+        frame.setLocation(600,400);
+
 
         frame.add(btn);
         frame.setVisible(true);
