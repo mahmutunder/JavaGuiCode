@@ -1,6 +1,7 @@
 package zuhalTest;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class OpenNewFrame {
     JFrame frame = new JFrame();
@@ -12,6 +13,10 @@ public class OpenNewFrame {
         frame.setSize(420,420);
         frame.setLayout(null);
 
+        label.setBounds(0,0,100,50);
+        label.setFont(new Font(Font.MONOSPACED,Font.ITALIC,25));
+
+        frame.add(label);
         frame.setLocation(600,400);
 
 
